@@ -27,9 +27,17 @@ def show():
         print(f"{number}. [{mark}] {task['title']}")
 
 
+def done(number):
+    tasks = load()
+    tasks[number - 1]["done"] = True
+    save(tasks)
+
+
 if __name__ == "__main__":
     command = sys.argv[1]
     if command == "add":
         add(sys.argv[2])
     elif command == "list":
         show()
+    elif command == "done":
+        done(int(sys.argv[2]))
