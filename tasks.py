@@ -21,7 +21,15 @@ def add(title):
     save(tasks)
 
 
+def show():
+    for number, task in enumerate(load(), start=1):
+        mark = "x" if task["done"] else " "
+        print(f"{number}. [{mark}] {task['title']}")
+
+
 if __name__ == "__main__":
     command = sys.argv[1]
     if command == "add":
         add(sys.argv[2])
+    elif command == "list":
+        show()
