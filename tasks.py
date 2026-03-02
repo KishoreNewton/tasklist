@@ -41,3 +41,7 @@ if __name__ == "__main__":
         show()
     elif command == "done":
         done(int(sys.argv[2]))
+    elif command == "remove":
+        tasks = load()
+        del tasks[int(sys.argv[2]) - 1]
+        save(tasks)
