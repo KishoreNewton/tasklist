@@ -45,3 +45,5 @@ if __name__ == "__main__":
         tasks = load()
         del tasks[int(sys.argv[2]) - 1]
         save(tasks)
+    elif command == "clear":
+        save([t for t in load() if not t["done"]])
