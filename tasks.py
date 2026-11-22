@@ -57,3 +57,7 @@ if __name__ == "__main__":
         save([t for t in load() if not t["done"]])
     elif command == "help":
         print("Commands: add, list, done, remove, clear, help")
+    elif command == "undo":
+        tasks = load()
+        tasks[int(sys.argv[2]) - 1]["done"] = False
+        save(tasks)
