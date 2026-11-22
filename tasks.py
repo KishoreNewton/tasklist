@@ -33,7 +33,7 @@ def show():
 
 def done(number):
     tasks = load()
-    tasks[number]["done"] = True
+    tasks[number - 1]["done"] = True
     save(tasks)
 
 
