@@ -7,6 +7,10 @@ Semantic Versioning.
 
 ## [Unreleased]
 
+### Added
+
+- An edit command that changes the title of a task.
+
 ## [1.2.1] - 2026-11-22
 
 ### Fixed
