@@ -7,6 +7,8 @@ Semantic Versioning.
 
 ## [Unreleased]
 
+## [1.2.1] - 2026-11-22
+
 ### Fixed
 
 - With no command, tasks.py shows the help instead of a traceback.
@@ -17,5 +19,6 @@ Semantic Versioning.
 
 - A --version option that prints the version.
 
-[unreleased]: https://github.com/KishoreNewton/tasklist/compare/v1.2.0...HEAD
+[unreleased]: https://github.com/KishoreNewton/tasklist/compare/v1.2.1...HEAD
+[1.2.1]: https://github.com/KishoreNewton/tasklist/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/KishoreNewton/tasklist/compare/v1.1...v1.2.0
