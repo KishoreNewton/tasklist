@@ -1,0 +1,5 @@
+#!/bin/sh
+if git grep --cached -n "DEBUG" -- "*.py"; then
+  echo "Remove the DEBUG lines before you commit."
+  exit 1
+fi
