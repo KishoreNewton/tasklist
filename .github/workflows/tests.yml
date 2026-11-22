@@ -24,3 +24,14 @@ jobs:
       - run: python3 tasks.py list
       - if: runner.debug == '1'
         run: cat tasks.json
+
+  package:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: git archive -o tasklist.zip HEAD
+      - uses: actions/upload-artifact@v7
+        with:
+          name: tasklist
+          path: tasklist.zip
