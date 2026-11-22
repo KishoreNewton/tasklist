@@ -7,6 +7,10 @@ Semantic Versioning.
 
 ## [Unreleased]
 
+### Fixed
+
+- With no command, tasks.py shows the help instead of a traceback.
+
 ## [1.2.0] - 2026-11-22
 
 ### Added
