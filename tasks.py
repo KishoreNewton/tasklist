@@ -2,7 +2,7 @@ import json
 import sys
 from pathlib import Path
 
-__version__ = "1.2.0"
+__version__ = "1.2.1"
 
 STORE = Path("tasks.json")
 
