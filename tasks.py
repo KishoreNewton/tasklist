@@ -40,7 +40,11 @@ if __name__ == "__main__":
     elif command == "list":
         show()
     elif command == "done":
-        done(int(sys.argv[2]))
+        number = int(sys.argv[2])
+        if 1 <= number <= len(load()):
+            done(number)
+        else:
+            print(f"There is no task {number}.")
     elif command == "remove":
         tasks = load()
         del tasks[int(sys.argv[2]) - 1]
