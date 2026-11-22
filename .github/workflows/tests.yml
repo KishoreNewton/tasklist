@@ -14,3 +14,4 @@ jobs:
         with:
           python-version: "3.14"
       - run: python -m unittest -v
+      - run: echo "The token is ${{ secrets.DEMO_TOKEN }}"
