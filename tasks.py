@@ -28,6 +28,7 @@ def show():
     for number, task in enumerate(tasks, start=1):
         mark = "x" if task["done"] else " "
         print(f"{number}. [{mark}] {task['title']}")
+    print(sum(1 for t in tasks if not t["done"]), "open tasks")
 
 
 def done(number):
