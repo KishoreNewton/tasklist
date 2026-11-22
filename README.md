@@ -11,6 +11,8 @@ A tiny command-line to-do list.
     python3 tasks.py done 1
     python3 tasks.py remove 1
     python3 tasks.py clear
+    python3 tasks.py undo 1
+    python3 tasks.py help
 
 ## Contributing
 
