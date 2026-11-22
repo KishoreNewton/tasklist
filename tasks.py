@@ -23,7 +23,7 @@ def add(title):
 
 def show():
     tasks = load()
-    if len(tasks) == 0:
+    if not tasks:
         print("No tasks yet.")
     for number, task in enumerate(tasks, start=1):
         mark = "x" if task["done"] else " "
