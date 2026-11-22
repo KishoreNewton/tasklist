@@ -1,5 +1,7 @@
 # Tasklist
 
+![Tests](https://github.com/KishoreNewton/tasklist/actions/workflows/tests.yml/badge.svg)
+
 A tiny command-line to-do list.
 
 ## Usage
