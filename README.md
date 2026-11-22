@@ -13,3 +13,7 @@ A tiny command-line to-do list.
 ## Contributing
 
 Ideas and fixes are welcome. Open an issue first.
+
+## License
+
+MIT, see LICENSE.
