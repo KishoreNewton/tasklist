@@ -65,3 +65,7 @@ if __name__ == "__main__":
         save(tasks)
     elif command == "--version":
         print("tasklist", __version__)
+    elif command == "edit":
+        tasks = load()
+        tasks[int(sys.argv[2]) - 1]["title"] = sys.argv[3]
+        save(tasks)
