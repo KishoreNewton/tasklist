@@ -14,3 +14,13 @@ jobs:
         with:
           python-version: "3.14"
       - run: python -m unittest -v
+
+  try-it:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: python3 tasks.py add "Buy milk"
+      - run: python3 tasks.py list
+      - if: runner.debug == '1'
+        run: cat tasks.json
