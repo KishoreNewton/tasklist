@@ -55,3 +55,5 @@ if __name__ == "__main__":
         save(tasks)
     elif command == "clear":
         save([t for t in load() if not t["done"]])
+    elif command == "help":
+        print("Commands: add, list, done, remove, clear, help")
