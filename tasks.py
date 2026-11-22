@@ -2,6 +2,8 @@ import json
 import sys
 from pathlib import Path
 
+__version__ = "1.1.0"
+
 STORE = Path("tasks.json")
 
 
@@ -61,3 +63,5 @@ if __name__ == "__main__":
         tasks = load()
         tasks[int(sys.argv[2]) - 1]["done"] = False
         save(tasks)
+    elif command == "--version":
+        print("tasklist", __version__)
