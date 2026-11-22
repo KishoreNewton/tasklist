@@ -8,6 +8,7 @@ A tiny command-line to-do list.
     python3 tasks.py list
     python3 tasks.py done 1
     python3 tasks.py remove 1
+    python3 tasks.py clear
 
 ## Contributing
 
