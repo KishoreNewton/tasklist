@@ -40,7 +40,7 @@ def done(number):
 
 
 if __name__ == "__main__":
-    command = sys.argv[1]
+    command = sys.argv[1] if len(sys.argv) > 1 else "help"
     if command == "add":
         add(sys.argv[2])
     elif command == "list":
